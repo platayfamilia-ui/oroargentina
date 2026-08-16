@@ -1,0 +1,18 @@
+{
+  "name": "Cotización Oficial del Oro - Argentina",
+  "short_name": "Oro Argentina",
+  "description": "Cotización oficial del oro en Argentina, precio del oro hoy.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b2550",
+  "theme_color": "#0d2f64",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://icons.veryicon.com/png/o/miscellaneous/a-set-of-color-icons-for-financial-management/gold-bullion-4.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
