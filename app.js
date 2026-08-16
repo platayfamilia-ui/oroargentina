@@ -166,12 +166,7 @@ async function fetchJSON(url) {
   return r.json();
 }
 async function fetchGoldQuote() {
-  const urls = ["/api/gold-quote", "/.netlify/functions/gold-quote"];
-  let lastError = null;
-  for (const url of urls) {
-    try { return await fetchJSON(url); } catch (err) { lastError = err; }
-  }
-  throw lastError || new Error("Error de API");
+  return fetchJSON("/api/gold-quote");
 }
 
 // --- Update principal ---
@@ -216,7 +211,7 @@ async function update() {
       errorWrap.classList.remove("hidden");
       const errorMsg = $("error_msg");
       if (errorMsg) errorMsg.textContent = window.location.protocol === "file:"
-        ? "Abrí el sitio con Vercel o Netlify para que funcione /api."
+        ? "Abrí el sitio con Vercel para que funcione /api."
         : e.message;
     }
   } finally {
