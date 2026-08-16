@@ -216,7 +216,7 @@ async function update() {
       errorWrap.classList.remove("hidden");
       const errorMsg = $("error_msg");
       if (errorMsg) errorMsg.textContent = window.location.protocol === "file:"
-        ? "Abrí el sitio con Netlify para que funcione /api."
+        ? "Abrí el sitio con Vercel o Netlify para que funcione /api."
         : e.message;
     }
   } finally {
